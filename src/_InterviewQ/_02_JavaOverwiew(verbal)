@@ -1,0 +1,88 @@
+------------------JAVA OVERVIEW 2 (VERBAL)-------------------------
+
+//TODO 1)What is access modifier?What are the access modifiers in Java?
+
+-It defines the visibility.
+-public protected default private
+
+//TODO 2)Whats package in java?
+
+- It is place where related classes are stored.
+
+//TODO 3)What is class in Java?
+
+- Class is where objects come from.
+
+//TODO 4)What is string immutable?
+
+-We can not change the existing value of string.
+
+String str="hellojava";
+String str2=str.toLowercase(); //Changed.
+str.toLowercase();// nothing changed.
+str=str.toLowercase();// changed.
+
+//TODO 5) What is constructor in Java?
+
+-is a special method
+-no return type (access modifier+class name)
+-to create object
+
+//TODO 6) What is exception and give some examples for exceptions?
+
+-Arithmetic E,
+-No Such Element E,
+-Index Out of bound  E,
+-(Thread.sleep) Interrupted E.
+
+//TODO 7)How do you handle exceptions in Java?
+
+-Try Catch  Finally
+-throws keyword(method signature)
+
+In Java, a "method signature" is part of the method declaration.
+It's the combination of the method name and the parameter list.
+
+public class Main {
+  static void checkAge(int age) throws ArithmeticException {
+    if (age < 18) {
+      throw new ArithmeticException("Access denied - You must be at least 18 years old.");
+    }
+    else {
+      System.out.println("Access granted - You are old enough!");
+    }
+  }
+
+  public static void main(String[] args) {
+    checkAge(15); // Set age to 15 (which is below 18...)
+  }
+}
+
+//TODO 8)Explain a situation where finally block will not get executed?
+
+System.exit(0);
+
+//TODO 9)What is the difference betwwen final and finally?
+
+final is a keyword- It makes the feature unchangeable
+finally is a block to handle exception
+
+//TODO 9)Difference between throw and throws?
+-throw is to create exception
+-throws is to handle exception
+
+TODO 10)HashMap and HashSet?
+
+Set sub interface of Collection-1)List 2)Set 3)Queue
+
+Map- (interface) key- value
+
+TODO 11)What are the ways of abstraction in Java?
+
+1)Abstract Class
+2)Interface
+
+
+
+
+
